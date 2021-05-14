@@ -13,4 +13,14 @@ class PersonaController extends Controller
         return view('admin/persona/index')->with('personas', $personas);
 
     }
+    public function create(){
+        return view('admin/persona/create');
+    }
+    public function store(Request $request){
+        $persona = new Persona ($request->all());
+        $persona->save();
+        return readdir()->route('persona.index');
+
+
+    }
 }
