@@ -15,11 +15,11 @@ use App\Http\Controllers\PersonaController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wolcome');
 });
 
 // Route::get('/persona', [PersonaController::class, 'index']);
-Route::resource('/persona', PersonaController::class);
+Route::resource('persona', PersonaController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
