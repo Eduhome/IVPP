@@ -17,9 +17,9 @@ class PersonaController extends Controller
         return view('admin/persona/create');
     }
     public function store(Request $request){
-        $persona = new Persona ($request->all());
+        $persona = new Persona($request->all());
         $persona->save();
-        return readdir()->route('persona.index');
+        return redirect()->route('persona.index');
 
 
     }

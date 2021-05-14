@@ -9,9 +9,11 @@
     <title>Document</title>
 </head>
 <body>
+
+@csrf
 <form class="container" action="{{route('persona.store')}}" method="post" >
 
-        @csrf 
+       
         <div class="row">
             <div class="col-md-3">
                 <label for="nombre">Nombre</label>
@@ -41,6 +43,9 @@
         </div>
 
 </form>
+
+
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     
